@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I bins da profi</title>
+    <script>
+        function changeText() {
+            document.getElementById("paragraph1").innerHTML =
+                "Jetzt steht schon was.";
+        };
+        function makeSum() {
+            let n1 = document.getElementById("idNum1").value;
+            let n2 = document.getElementById("idNum2").value;
+            document.getElementById("paragraph1").innerHTML =
+                Number( n1 ) + Number( n2 );
+        }
+    </script>
+</head>
+<body style="background: #888;
+      background-image: url('./pics/weichsel.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; ">
+    <form>
+        <label for="fname">Erste Zahl:</label> <br>
+        <input type="number" id="idNum1" name="nameNum1">   <br>
+        <label for="lname">Zweite Zahl:</label> <br>
+        <input type="number" id="idNum2" name="nameNum2">
+    </form>
+    <h1 style="color:#F00">Hello World</h1>
+    <h2> &Auml; Seite 2</h2>
+    <button onclick="changeText()"> Click mich mal</button>
+    <button onclick="makeSum()"> Click mich mal2</button>
+    <p id="paragraph1">
+        Da steht nix.
+    </p>
+    <p>
+        <span style="color:#f00;">D</span>a geht es zurück zur
+        <a href="./helloWorld.html">
+            Seite 1.
+        </a>
+    </p>
+</body>
+</html>
